@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 app.use(express.static(__dirname + '/public'))
 const server = app.listen(PORT, () => {
-    console.log('listening on PORT ${PORT}')
+    console.log(`listening on PORT ${PORT}`)
 
 })
 const io = new Server(server);
